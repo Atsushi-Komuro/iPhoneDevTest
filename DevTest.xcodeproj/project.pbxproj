@@ -14,6 +14,7 @@
 		BF1C0A451B7A3D37002E7869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1C0A431B7A3D37002E7869 /* LaunchScreen.storyboard */; };
 		BF1C0A501B7A3D37002E7869 /* DevTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C0A4F1B7A3D37002E7869 /* DevTestTests.swift */; };
 		BF1C0A5B1B7A3D37002E7869 /* DevTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C0A5A1B7A3D37002E7869 /* DevTestUITests.swift */; };
+		BFFBD29F1B7C700F002D8454 /* Sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BFFBD29E1B7C700E002D8454 /* Sample.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BF1C0A561B7A3D37002E7869 /* DevTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1C0A5A1B7A3D37002E7869 /* DevTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTestUITests.swift; sourceTree = "<group>"; };
 		BF1C0A5C1B7A3D37002E7869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFFBD29E1B7C700E002D8454 /* Sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Sample.mp3; path = ../../../Downloads/Sample.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		BF1C0A391B7A3D36002E7869 /* DevTest */ = {
 			isa = PBXGroup;
 			children = (
+				BFFBD29E1B7C700E002D8454 /* Sample.mp3 */,
 				BF1C0A3A1B7A3D37002E7869 /* AppDelegate.swift */,
 				BF1C0A3C1B7A3D37002E7869 /* ViewController.swift */,
 				BF1C0A3E1B7A3D37002E7869 /* Main.storyboard */,
@@ -192,6 +195,15 @@
 				TargetAttributes = {
 					BF1C0A361B7A3D36002E7869 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = TT7F5T4F67;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					BF1C0A4A1B7A3D37002E7869 = {
 						CreatedOnToolsVersion = 7.0;
@@ -230,6 +242,7 @@
 			files = (
 				BF1C0A451B7A3D37002E7869 /* LaunchScreen.storyboard in Resources */,
 				BF1C0A421B7A3D37002E7869 /* Assets.xcassets in Resources */,
+				BFFBD29F1B7C700F002D8454 /* Sample.mp3 in Resources */,
 				BF1C0A401B7A3D37002E7869 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,10 +409,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DevTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AK.DevTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -407,10 +424,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DevTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AK.DevTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -481,6 +502,7 @@
 				BF1C0A611B7A3D37002E7869 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF1C0A621B7A3D37002E7869 /* Build configuration list for PBXNativeTarget "DevTestTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +511,7 @@
 				BF1C0A641B7A3D37002E7869 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF1C0A651B7A3D37002E7869 /* Build configuration list for PBXNativeTarget "DevTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +520,7 @@
 				BF1C0A671B7A3D37002E7869 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
